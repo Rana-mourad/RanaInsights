@@ -1,83 +1,54 @@
-import React, { useState } from "react";
-import { FaLinkedin, FaGithub, FaEnvelope, FaDownload, FaBriefcase, FaChartLine } from "react-icons/fa";
-import { motion } from "framer-motion";
-import "tailwindcss/tailwind.css";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rana Elamir Mourad - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body class="bg-gray-100 text-gray-900 text-center p-6">
 
-export default function Portfolio() {
-  const [darkMode, setDarkMode] = useState(false);
-  
-  return (
-    <div className={darkMode ? "dark bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}>
-      {/* Header Section */}
-      <header className="p-6 flex flex-col items-center text-center">
-        <img src="/assets/images/profile.png" alt="Rana Elamir" className="w-32 h-32 rounded-full shadow-lg" />
-        <h1 className="text-4xl font-bold mt-4">Rana Elamir Mourad</h1>
-        <h2 className="text-xl text-gray-500 dark:text-gray-300">Power BI Engineer | Business Analyst</h2>
-        <p className="mt-2 max-w-lg">
-          Transforming raw data into meaningful insights through visualization, reporting, and process optimization.
-        </p>
-        <div className="flex space-x-4 mt-4">
-          <a href="mailto:rana.elamir.mourad@gmail.com" className="text-xl hover:text-blue-500"><FaEnvelope /></a>
-          <a href="http://linkedin.com/in/ranaelamir" target="_blank" className="text-xl hover:text-blue-700"><FaLinkedin /></a>
-          <a href="https://github.com/Rana-mourad/Power-BI-Projects" target="_blank" className="text-xl hover:text-gray-700"><FaGithub /></a>
+    <!-- Header Section -->
+    <header class="p-6">
+        <img src="assets/images/profile.png" alt="Rana Elamir" class="w-32 h-32 rounded-full border-4 border-green-500 shadow-lg mx-auto">
+        <h1 class="text-4xl font-bold mt-4">Rana Elamir Mourad</h1>
+        <h2 class="text-xl text-gray-500">Power BI Engineer | Business Analyst</h2>
+        <p class="mt-2 max-w-lg mx-auto">Transforming raw data into meaningful insights through visualization, reporting, and process optimization.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="mailto:rana.elamir.mourad@gmail.com" class="text-xl hover:text-blue-500">📧</a>
+            <a href="http://linkedin.com/in/ranaelamir" class="text-xl hover:text-blue-700">🔗</a>
+            <a href="https://github.com/Rana-mourad/Power-BI-Projects" class="text-xl hover:text-gray-700">💻</a>
         </div>
-        <a href="/assets/Rana_Elamir_Resume.pdf" download className="mt-4 p-2 bg-green-500 text-white rounded-lg shadow-lg flex items-center gap-2 hover:bg-green-700">
-          <FaDownload /> Download Resume
-        </a>
-        <button onClick={() => setDarkMode(!darkMode)} className="mt-4 p-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-700">Toggle Dark Mode</button>
-      </header>
-      
-      {/* About Section */}
-      <section className="p-6">
-        <h2 className="text-3xl font-bold text-center mb-6">👋 About Me</h2>
-        <p className="text-center max-w-2xl mx-auto">
-          I am a skilled <strong>Power BI Engineer & Business Analyst</strong> with expertise in <strong>data visualization, analytics, and process optimization</strong>. My passion lies in using <strong>Power BI, Excel, and SQL</strong> to drive data-driven decision-making and enhance business performance.
-        </p>
-      </section>
-      
-      {/* Projects Section */}
-      <section className="p-6">
-        <h2 className="text-3xl font-bold text-center mb-6">📊 Featured Projects</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {["Sales Performance Dashboard", "Walmart Sales Dashboard", "Financial Analytics Dashboard"].map((project, index) => (
-            <motion.div key={index} whileHover={{ scale: 1.05 }} className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
-              <img src={`/assets/images/project${index + 1}.png`} alt={project} className="rounded-md" />
-              <h3 className="text-xl font-semibold mt-3">{project}</h3>
-              <p className="text-gray-600 dark:text-gray-300">A detailed analysis dashboard with interactive charts and insights.</p>
-            </motion.div>
-          ))}
+    </header>
+
+    <!-- Projects Section -->
+    <section class="p-6">
+        <h2 class="text-3xl font-bold">📊 Featured Projects</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-4">
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="assets/images/sales_dashboard.png" alt="Sales Dashboard" class="rounded-md">
+                <h3 class="text-xl font-semibold mt-3">Sales Performance Dashboard</h3>
+                <p>Interactive Power BI dashboard tracking sales trends and performance.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="assets/images/walmart_dashboard.png" alt="Walmart Dashboard" class="rounded-md">
+                <h3 class="text-xl font-semibold mt-3">Walmart Sales Dashboard</h3>
+                <p>Comprehensive analysis dashboard for Walmart's product performance.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="assets/images/finance_dashboard.png" alt="Financial Dashboard" class="rounded-md">
+                <h3 class="text-xl font-semibold mt-3">Financial Analytics Dashboard</h3>
+                <p>Budget and expense tracking dashboard.</p>
+            </div>
         </div>
-      </section>
-      
-      {/* Experience Section */}
-      <section className="p-6">
-        <h2 className="text-3xl font-bold text-center mb-6">💼 Work Experience</h2>
-        <div className="max-w-2xl mx-auto">
-          <div className="mb-4">
-            <h3 className="text-lg font-semibold"><FaBriefcase className="inline mr-2" /> Product Development Lead | Anoush.AI</h3>
-            <p className="text-gray-500">Jan 2024 - Present</p>
-            <ul className="list-disc list-inside text-gray-400">
-              <li>Conducted market research with 50+ users and analyzed 7 competitors.</li>
-              <li>Developed data-driven product roadmaps and dashboards.</li>
-            </ul>
-          </div>
-          <div className="mb-4">
-            <h3 className="text-lg font-semibold"><FaChartLine className="inline mr-2" /> Project Manager Intern | Excelerate</h3>
-            <p className="text-gray-500">Aug 2024 - Oct 2024</p>
-            <ul className="list-disc list-inside text-gray-400">
-              <li>Managed a global hackathon event with a $10,000 budget.</li>
-              <li>Developed quality control frameworks improving efficiency by 20%.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      
-      {/* Footer */}
-      <footer className="text-center p-6 bg-gray-200 dark:bg-gray-800">
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-6 bg-gray-200">
         <p>📬 Contact: rana.elamir.mourad@gmail.com</p>
-        <p>🌐 <a href="http://linkedin.com/in/ranaelamir" className="hover:text-blue-500">LinkedIn</a> | <a href="https://github.com/Rana-mourad/Power-BI-Projects" className="hover:text-gray-500">GitHub</a></p>
+        <p>🌐 <a href="http://linkedin.com/in/ranaelamir" class="hover:text-blue-500">LinkedIn</a> | <a href="https://github.com/Rana-mourad/Power-BI-Projects" class="hover:text-gray-500">GitHub</a></p>
         <p>© 2025 Rana Elamir Mourad - All Rights Reserved</p>
-      </footer>
-    </div>
-  );
-}
+    </footer>
+
+</body>
+</html>
