@@ -1,12 +1,28 @@
+/* General Styles */
 body {
-    background-color: #1A1D2A; /* Dark navy blue */
+    background-color: #1A1D2A; /* Dark navy background */
     color: #F5F5F5; /* Light text */
     font-family: 'Arial', sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
-    color: #7A7F66; /* Olive green headings */
+/* Header */
+header {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #7A7F66; /* Olive green text */
+}
+
+/* Profile Image */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .profile-image {
@@ -14,13 +30,34 @@ h1, h2, h3 {
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #7A7F66; /* Olive green border */
-    display: block;
-    margin: auto;
+    border: 5px solid #7A7F66; /* Olive green border */
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+/* Projects */
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.project {
+    background-color: #2C2F3F; /* Darker shade */
+    padding: 15px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #22252F;
+    color: #F5F5F5;
 }
