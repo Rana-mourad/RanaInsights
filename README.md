@@ -1,6 +1,6 @@
 # Rana Elamir Mourad - GitHub Portfolio
 
-![Profile Image](assets/images/ profile.png)
+![Profile Image](assets/images/profile1.png)
 
 Welcome to the official portfolio of **Rana Elamir Mourad**, a **Business Analyst** and **Power BI Engineer** with expertise in data visualization, project management, and process improvement. 
 
