@@ -1,140 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rana Elamir Mourad - Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
+import React, { useState } from "react";
+import { FaLinkedin, FaGithub, FaEnvelope, FaDownload, FaBriefcase, FaChartLine } from "react-icons/fa";
+import { motion } from "framer-motion";
+import "tailwindcss/tailwind.css";
 
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <img src="assets/images/profile.png" alt="Rana Elamir" class="profile-img">
-            <h1>Rana Elamir Mourad</h1>
-            <h2>Power BI Engineer | Business Analyst</h2>
-            <p>Transforming raw data into meaningful insights through visualization, reporting, and process optimization.</p>
-            <div class="social-links">
-                <a href="mailto:rana.elamir.mourad@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="http://linkedin.com/in/ranaelamir" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Rana-mourad/Power-BI-Projects" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+export default function Portfolio() {
+  const [darkMode, setDarkMode] = useState(false);
+  
+  return (
+    <div className={darkMode ? "dark bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}>
+      {/* Header Section */}
+      <header className="p-6 flex flex-col items-center text-center">
+        <img src="/assets/images/profile.png" alt="Rana Elamir" className="w-32 h-32 rounded-full shadow-lg" />
+        <h1 className="text-4xl font-bold mt-4">Rana Elamir Mourad</h1>
+        <h2 className="text-xl text-gray-500 dark:text-gray-300">Power BI Engineer | Business Analyst</h2>
+        <p className="mt-2 max-w-lg">
+          Transforming raw data into meaningful insights through visualization, reporting, and process optimization.
+        </p>
+        <div className="flex space-x-4 mt-4">
+          <a href="mailto:rana.elamir.mourad@gmail.com" className="text-xl hover:text-blue-500"><FaEnvelope /></a>
+          <a href="http://linkedin.com/in/ranaelamir" target="_blank" className="text-xl hover:text-blue-700"><FaLinkedin /></a>
+          <a href="https://github.com/Rana-mourad/Power-BI-Projects" target="_blank" className="text-xl hover:text-gray-700"><FaGithub /></a>
         </div>
-    </header>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>📊 Featured Projects</h2>
-
-            <div class="project">
-                <img src="assets/images/sales_dashboard.png" alt="Sales Performance Dashboard">
-                <div class="project-info">
-                    <h3>Sales Performance Dashboard</h3>
-                    <p>Interactive Power BI dashboard tracking sales trends and performance metrics.</p>
-                    <ul>
-                        <li>✔ Data Cleaning & Transformation</li>
-                        <li>✔ Interactive Charts & Insights</li>
-                        <li>✔ DAX Measures for Analytics</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="assets/images/walmart_dashboard.png" alt="Walmart Sales Dashboard">
-                <div class="project-info">
-                    <h3>Walmart Sales Dashboard</h3>
-                    <p>Comprehensive sales analysis dashboard for Walmart's product performance.</p>
-                    <ul>
-                        <li>✔ Slicers & Drilldowns</li>
-                        <li>✔ Profitability Insights</li>
-                        <li>✔ Custom Visualizations</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="assets/images/finance_dashboard.png" alt="Financial Analytics Dashboard">
-                <div class="project-info">
-                    <h3>Financial Analytics Dashboard</h3>
-                    <p>Finance tracking dashboard visualizing budget and expense breakdowns.</p>
-                    <ul>
-                        <li>✔ Expense Tracking & Categorization</li>
-                        <li>✔ Profit & Loss Analysis</li>
-                        <li>✔ Interactive Navigation</li>
-                    </ul>
-                </div>
-            </div>
+        <a href="/assets/Rana_Elamir_Resume.pdf" download className="mt-4 p-2 bg-green-500 text-white rounded-lg shadow-lg flex items-center gap-2 hover:bg-green-700">
+          <FaDownload /> Download Resume
+        </a>
+        <button onClick={() => setDarkMode(!darkMode)} className="mt-4 p-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-700">Toggle Dark Mode</button>
+      </header>
+      
+      {/* About Section */}
+      <section className="p-6">
+        <h2 className="text-3xl font-bold text-center mb-6">👋 About Me</h2>
+        <p className="text-center max-w-2xl mx-auto">
+          I am a skilled <strong>Power BI Engineer & Business Analyst</strong> with expertise in <strong>data visualization, analytics, and process optimization</strong>. My passion lies in using <strong>Power BI, Excel, and SQL</strong> to drive data-driven decision-making and enhance business performance.
+        </p>
+      </section>
+      
+      {/* Projects Section */}
+      <section className="p-6">
+        <h2 className="text-3xl font-bold text-center mb-6">📊 Featured Projects</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {["Sales Performance Dashboard", "Walmart Sales Dashboard", "Financial Analytics Dashboard"].map((project, index) => (
+            <motion.div key={index} whileHover={{ scale: 1.05 }} className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
+              <img src={`/assets/images/project${index + 1}.png`} alt={project} className="rounded-md" />
+              <h3 className="text-xl font-semibold mt-3">{project}</h3>
+              <p className="text-gray-600 dark:text-gray-300">A detailed analysis dashboard with interactive charts and insights.</p>
+            </motion.div>
+          ))}
         </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <h2>💼 Work Experience</h2>
-            <div class="experience">
-                <h3>Product Development Lead | Anoush.AI</h3>
-                <p><em>Jan 2024 - Present</em></p>
-                <ul>
-                    <li>🔹 Conducted market research on 50+ users and 7 competitor platforms.</li>
-                    <li>🔹 Developed a strategic product roadmap using data insights.</li>
-                </ul>
-            </div>
-
-            <div class="experience">
-                <h3>Project Manager Intern | Excelerate</h3>
-                <p><em>Aug 2024 - Oct 2024</em></p>
-                <ul>
-                    <li>🔹 Managed a global hackathon event with a $10,000 budget.</li>
-                    <li>🔹 Designed a quality control framework improving efficiency by 20%.</li>
-                </ul>
-            </div>
-
-            <div class="experience">
-                <h3>Social Media Marketing Intern | HookZApp</h3>
-                <p><em>Nov 2022 - Jun 2023</em></p>
-                <ul>
-                    <li>🔹 Led campaigns boosting engagement by 30%.</li>
-                    <li>🔹 Analyzed social media trends to increase followers by 25%.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>🎯 Skills & Tools</h2>
-            <ul class="skills-list">
-                <li>📊 Power BI - Data Visualization & Dashboards</li>
-                <li>📈 Excel - Advanced Reporting & Analytics</li>
-                <li>📅 Project Management - Agile, Scrum, Kanban</li>
-                <li>📝 Business Analysis - Market Research & Optimization</li>
-                <li>🗣 Communication & Problem-Solving</li>
+      </section>
+      
+      {/* Experience Section */}
+      <section className="p-6">
+        <h2 className="text-3xl font-bold text-center mb-6">💼 Work Experience</h2>
+        <div className="max-w-2xl mx-auto">
+          <div className="mb-4">
+            <h3 className="text-lg font-semibold"><FaBriefcase className="inline mr-2" /> Product Development Lead | Anoush.AI</h3>
+            <p className="text-gray-500">Jan 2024 - Present</p>
+            <ul className="list-disc list-inside text-gray-400">
+              <li>Conducted market research with 50+ users and analyzed 7 competitors.</li>
+              <li>Developed data-driven product roadmaps and dashboards.</li>
             </ul>
+          </div>
+          <div className="mb-4">
+            <h3 className="text-lg font-semibold"><FaChartLine className="inline mr-2" /> Project Manager Intern | Excelerate</h3>
+            <p className="text-gray-500">Aug 2024 - Oct 2024</p>
+            <ul className="list-disc list-inside text-gray-400">
+              <li>Managed a global hackathon event with a $10,000 budget.</li>
+              <li>Developed quality control frameworks improving efficiency by 20%.</li>
+            </ul>
+          </div>
         </div>
-    </section>
-
-    <!-- Education & Certifications Section -->
-    <section id="education">
-        <div class="container">
-            <h2>🎓 Education & Certifications</h2>
-            <p><strong>Master’s in Medicinal Chemistry</strong> – Mansoura University (2024 - Present)</p>
-            <p><strong>Bachelor’s in Pharmacy</strong> – Modern Sciences and Arts University (2018 - 2023)</p>
-            <p><strong>Certifications:</strong> Power BI Engineering (DEPI - In Progress), IBM Data Science Certificate, Google Project Management.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>📬 Contact: rana.elamir.mourad@gmail.com</p>
-            <p>🌐 <a href="http://linkedin.com/in/ranaelamir">LinkedIn</a> | <a href="https://github.com/Rana-mourad/Power-BI-Projects">GitHub</a></p>
-            <p>© 2025 Rana Elamir Mourad - All Rights Reserved</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+      </section>
+      
+      {/* Footer */}
+      <footer className="text-center p-6 bg-gray-200 dark:bg-gray-800">
+        <p>📬 Contact: rana.elamir.mourad@gmail.com</p>
+        <p>🌐 <a href="http://linkedin.com/in/ranaelamir" className="hover:text-blue-500">LinkedIn</a> | <a href="https://github.com/Rana-mourad/Power-BI-Projects" className="hover:text-gray-500">GitHub</a></p>
+        <p>© 2025 Rana Elamir Mourad - All Rights Reserved</p>
+      </footer>
+    </div>
+  );
+}
