@@ -1,6 +1,6 @@
 # Rana Elamir Mourad - GitHub Portfolio
 
-![Profile Image](assets/images/profile.jpg)
+![Profile Image](assets/images/ profile.png)
 
 Welcome to the official portfolio of **Rana Elamir Mourad**, a **Business Analyst** and **Power BI Engineer** with expertise in data visualization, project management, and process improvement. 
 
@@ -21,7 +21,7 @@ I specialize in **transforming complex data into actionable business insights** 
 
 ### 3. **Personal Projects**
    - **Walmart Sales Dashboard**
-     - ![Walmart Dashboard](assets/images/walmart_sales.jpg)
+     - ![Walmart Dashboard](assets/images/walmart_dashboard.png)
      - **Overview:** Analyzed Walmart sales trends to identify key revenue drivers.
      - **Tools Used:** Excel, Power BI
    - **Superstore Sales Dashboard**
