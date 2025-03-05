@@ -1,7 +1,7 @@
 # 🏆 Rana Elamir Mourad - Business Analyst Portfolio
 
 <p align="center">
-  <img src="assets/images/profile.png" alt="Rana Elamir" class="profile-image">
+  <img src="assets/images/profile.png" alt="Rana Elamir" width="150" height="150" style="border-radius: 50%; border: 3px solid #7A7F66;">
 </p>
 
 ## 👋 Welcome to My Portfolio
