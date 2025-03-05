@@ -1,6 +1,6 @@
 # 🏆 Rana Elamir Mourad - Business Analyst Portfolio
 
-![Rana Elamir](assets/profile.png)
+![Rana Elamir](assets/images/profile.jpg .png)
 
 ## 📌 About Me
 I am a results-driven **Business Analyst & Power BI Engineer** with a strong foundation in **data analysis, process improvement, and project management**. My expertise lies in **translating data into strategic insights** that enhance business efficiency and decision-making.
