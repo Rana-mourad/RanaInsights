@@ -1,7 +1,7 @@
 # 🏆 Rana Elamir Mourad - Business Analyst Portfolio
 
 <p align="center">
-  <img src="assets/images/profile.jpg .png" alt="Rana Elamir" class="profile-pic">
+  <img src="assets/images/profile.jpg .png" alt="Rana Elamir" class="profile-image">
 </p>
 
 ## 👋 Welcome to My Portfolio
@@ -20,6 +20,7 @@ Hello! I'm **Rana Elamir Mourad**, a **Business Analyst & Power BI Engineer** pa
 **Overview:** Created a Power BI dashboard to track **sales trends and performance metrics**.  
 **Tools Used:** Power BI, Excel.  
 **Key Features:**
+
 ✔ **Data Cleaning & Transformation** using Power Query  
 ✔ **Interactive Charts** for revenue, top-selling products & customer segments  
 ✔ **DAX Measures** for sales growth rate & performance analysis  
@@ -30,6 +31,7 @@ Hello! I'm **Rana Elamir Mourad**, a **Business Analyst & Power BI Engineer** pa
 **Overview:** Built a **Walmart sales analysis dashboard** to explore product performance.  
 **Tools Used:** Power BI, Excel.  
 **Key Features:**
+
 ✔ **Slicers & Drilldowns** for category & region analysis  
 ✔ **Profitability Insights** from raw Excel data  
 ✔ **Custom Visuals** for enhanced storytelling  
@@ -40,6 +42,7 @@ Hello! I'm **Rana Elamir Mourad**, a **Business Analyst & Power BI Engineer** pa
 **Overview:** Developed a **finance tracking dashboard** to visualize budget and expense breakdowns.  
 **Tools Used:** Power BI, Excel.  
 **Key Features:**
+
 ✔ **Expense Tracking** with categorized spending trends  
 ✔ **Profit & Loss Breakdown** with income vs. expenses  
 ✔ **Navigation Buttons** for quick access to insights  
