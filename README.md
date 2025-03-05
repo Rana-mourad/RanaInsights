@@ -1,114 +1,151 @@
-# 🏆 Rana Elamir Mourad - Business Analyst Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rana Elamir Mourad - Data Analyst Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0E1621;
+            color: #F5F5F5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #1E2A38;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .header {
+            text-align: center;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #7A7F66;
+        }
+        h1, h2 {
+            color: #E2E2E2;
+            text-align: left;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li::before {
+            content: "✔";
+            color: #00A86B;
+            margin-right: 5px;
+        }
+        .contact a {
+            color: #00A86B;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
 
-<p align="center">
-  <img src="assets/images/ 1profile.png" alt="Rana Elamir" width="150" height="150" style="border-radius: 50%; border: 3px solid #7A7F66;">
-</p>
+<div class="container">
+    <div class="header">
+        <img src="assets/images/1profile.png" alt="Rana Elamir Mourad">
+        <h1>Rana Elamir Mourad</h1>
+        <h3>Data Analyst & Business Intelligence Engineer</h3>
+    </div>
 
-## 👋 Welcome to My Portfolio
-Hello! I'm **Rana Elamir Mourad**, a **Business Analyst & Power BI Engineer** passionate about transforming raw data into meaningful insights. My expertise lies in **data visualization, reporting, and process optimization** using **Power BI and Excel**.
+    <div class="section">
+        <h2>👋 About Me</h2>
+        <p>I'm a **Data Analyst & BI Engineer** specializing in **data visualization, reporting, and process optimization**. I use **Power BI, Excel, and SQL** to help companies make **data-driven decisions** and optimize performance.</p>
+    </div>
 
-🔍 **What you'll find here:**
-- 📊 My Power BI Dashboard Projects
-- 💼 My Work Experience
-- 🎓 Certifications & Skills
-- 📬 Contact Information
+    <div class="section">
+        <h2>📊 Featured Projects</h2>
+        
+        <h3>1️⃣ Sales Performance Dashboard</h3>
+        <p><b>Overview:</b> Built a Power BI dashboard to track **sales trends and performance metrics**.</p>
+        <ul>
+            <li>Automated **data cleaning & transformation** with Power Query.</li>
+            <li>Designed **interactive charts** for revenue, top-selling products & customer segments.</li>
+            <li>Used **DAX measures** to calculate sales growth rate & performance analysis.</li>
+        </ul>
+        <img src="assets/images/sales_dashboard.png" alt="Sales Dashboard" width="100%">
 
----
+        <h3>2️⃣ Walmart Sales Dashboard</h3>
+        <p><b>Overview:</b> Created a Walmart sales dashboard to analyze product performance.</p>
+        <ul>
+            <li>Used **slicers & drilldowns** for regional and category-based insights.</li>
+            <li>Analyzed **profitability trends** using raw Excel data.</li>
+            <li>Implemented **custom visuals** for enhanced storytelling.</li>
+        </ul>
+        <img src="assets/images/walmart_dashboard.png" alt="Walmart Dashboard" width="100%">
+    </div>
 
-## 📊 Featured Projects
-### **1️⃣ Sales Performance Dashboard**  
-**Overview:** Created a Power BI dashboard to track **sales trends and performance metrics**.  
-**Tools Used:** Power BI, Excel.  
-**Key Features:**
+    <div class="section">
+        <h2>💼 Work Experience</h2>
 
-✔ **Data Cleaning & Transformation** using Power Query  
-✔ **Interactive Charts** for revenue, top-selling products & customer segments  
-✔ **DAX Measures** for sales growth rate & performance analysis  
+        <h3>📌 Product Development Lead | Anoush.AI (Jan 2024 - Present)</h3>
+        <ul>
+            <li>Led **market research** across 50+ users & analyzed **7 competitors**.</li>
+            <li>Designed a **product roadmap** based on user insights.</li>
+        </ul>
 
-<img src="assets/images/sales_dashboard.png" alt="Sales Dashboard" width="100%">
+        <h3>📌 Project Manager Intern | Excelerate (Aug 2024 - Oct 2024)</h3>
+        <ul>
+            <li>Managed a **global event** with a **$10,000 budget** and **100% task completion**.</li>
+            <li>Used **Kanban & Agile tools** to track 25+ milestones.</li>
+        </ul>
 
-### **2️⃣ Walmart Sales Dashboard**  
-**Overview:** Built a **Walmart sales analysis dashboard** to explore product performance.  
-**Tools Used:** Power BI, Excel.  
-**Key Features:**
+        <h3>📌 Social Media Marketing Intern | HookZApp (Nov 2022 - Jun 2023)</h3>
+        <ul>
+            <li>Led marketing campaigns, increasing engagement by **30%**.</li>
+            <li>Optimized content strategy, growing followers by **25%**.</li>
+        </ul>
+    </div>
 
-✔ **Slicers & Drilldowns** for category & region analysis  
-✔ **Profitability Insights** from raw Excel data  
-✔ **Custom Visuals** for enhanced storytelling  
+    <div class="section">
+        <h2>🎯 Skills & Tools</h2>
+        <ul>
+            <li>✔ **Power BI** – Data Visualization & Dashboards</li>
+            <li>✔ **Excel** – Pivot Tables, Data Cleaning & Analysis</li>
+            <li>✔ **SQL** – Querying & Data Extraction</li>
+            <li>✔ **Project Management** – Agile, Kanban, Scrum</li>
+            <li>✔ **Business Analysis** – Market Research & Optimization</li>
+        </ul>
+    </div>
 
-<img src="assets/images/walmart_dashboard.png" alt="Walmart Dashboard" width="100%">
+    <div class="section">
+        <h2>🎓 Education & Certifications</h2>
+        <ul>
+            <li>🎓 **Master’s in Medicinal Chemistry** – Mansoura University (2024 - Present)</li>
+            <li>🎓 **Bachelor’s in Pharmacy** – MSA University (2018 - 2023)</li>
+            <li>📜 **Power BI Engineering** – DEPI (In Progress)</li>
+            <li>📜 **Data Science Certificate** – IBM (2024)</li>
+            <li>📜 **Google Project Management** – Google (In Progress)</li>
+        </ul>
+    </div>
 
-### **3️⃣ Financial Analytics Dashboard**  
-**Overview:** Developed a **finance tracking dashboard** to visualize budget and expense breakdowns.  
-**Tools Used:** Power BI, Excel.  
-**Key Features:**
+    <div class="section">
+        <h2>🏆 Awards & Recognitions</h2>
+        <ul>
+            <li>🏅 **Founder Academy & Heya Raeda (2024)** – Pitched Anoush.AI as an innovative solution.</li>
+            <li>🏅 **Top 50 Trainees – Akhnaton Trading (2023)**.</li>
+        </ul>
+    </div>
 
-✔ **Expense Tracking** with categorized spending trends  
-✔ **Profit & Loss Breakdown** with income vs. expenses  
-✔ **Navigation Buttons** for quick access to insights  
+    <div class="section contact">
+        <h2>📬 Get in Touch</h2>
+        <p>Email: <a href="mailto:rana.elamir.mourad@gmail.com">rana.elamir.mourad@gmail.com</a></p>
+        <p>LinkedIn: <a href="http://linkedin.com/in/ranaelamir" target="_blank">Profile</a></p>
+        <p>GitHub: <a href="https://github.com/Rana-mourad/Power-BI-Projects" target="_blank">Projects</a></p>
+    </div>
+</div>
 
-<img src="assets/images/finance_dashboard.png" alt="Finance Dashboard" width="100%">
-
----
-
-## 💼 Work Experience
-### **Product Development Lead** | Anoush.AI *(Jan 2024 - Present)*
-- Conducted **market research** from **50+ users** and analyzed **7 competitor platforms**.
-- Used **Excel** for benchmarking and feature prioritization.
-- Developed a **product roadmap** focused on user personas and feature alignment.
-
-### **Project Manager Intern** | Excelerate *(Aug 2024 - Oct 2024)*
-- Managed a **global event** with a **$10,000 budget** and **100% task completion**.
-- Designed a **quality control framework** that improved efficiency by **20%**.
-- Used **Kanban boards & Agile tools** to track **25+ milestones**.
-
-### **Social Media Marketing Intern** | HookZApp *(Nov 2022 - Jun 2023)*
-- Led social media campaigns, increasing engagement by **30%**.
-- Analyzed data to **boost follower growth by 25%**.
-
----
-
-## 🎯 Skills & Tools
-### **Technical Skills**
-✔ **Power BI** – Data visualization & dashboards  
-✔ **Excel** – Data analysis & reporting  
-✔ **Project Management** – Agile, Kanban, Scrum  
-✔ **Business Analysis** – Market Research & Process Optimization  
-
-### **Soft Skills**
-✔ Communication | Problem-Solving | Innovation | Documentation
-
-### **Languages**
-✔ English (Fluent) | Arabic (Native)
-
----
-
-## 🎓 Education & Certifications
-🎓 **Master’s in Medicinal Chemistry** *(2024 – Present)* – Mansoura University  
-🎓 **Bachelor’s in Pharmacy** *(2018 – 2023)* – Modern Sciences and Arts University  
-
-📜 **Power BI Engineering** – DEPI *(In Progress)*  
-📜 **Data Science Professional Certificate** – IBM *(2024)*  
-📜 **Google Project Management** – Google *(In Progress)*  
-📜 **PMP Preparation Course** – BIM Arabia *(2024)*  
-📜 **Flutter Course** – UN Women *(2023)*  
-📜 **Digital Marketing Nanodegree** – Udacity *(2020)*  
-
----
-
-## 🏆 Awards & Recognitions
-🏅 **Founder Academy & Heya Raeda (2024)** – Pitched **Anoush.AI** as an innovative healthcare solution  
-🏅 **Top 50 Trainees – Akhnaton Trading (2023)**  
-🏅 **Public Health Campaign Contributor – EPSF (2020)**  
-
----
-
-## 📬 Get in Touch
-📧 **Email:** rana.elamir.mourad@gmail.com  
-🔗 **LinkedIn:** [Profile](http://linkedin.com/in/ranaelamir)  
-🔗 **GitHub:** [Projects](https://github.com/Rana-mourad/Power-BI-Projects)  
-📜 **References:** Available upon request.  
-
----
-
-💡 *This portfolio is designed with a user-friendly experience in mind, making it easy to explore my work and expertise. Feel free to connect with me!* 🚀
+</body>
+</html>
